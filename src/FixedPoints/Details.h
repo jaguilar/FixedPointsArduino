@@ -14,7 +14,6 @@
 
 #pragma once
 
-#include <Arduino.h>
 #include <limits.h>
 #include <stdint.h>
 
@@ -33,6 +32,8 @@
 
 #if !defined(__AVR__)
 #define FIXED_POINTS_NO_RANDOM
+#else
+#include "Arduino.h"
 #endif
 
 // Pay no attention to the man behind the curtains
